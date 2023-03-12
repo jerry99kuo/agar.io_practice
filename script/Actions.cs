@@ -28,6 +28,14 @@ public class Actions : MonoBehaviour
 
     }
 
+    public void Split (){
+        if (transform.localScale.x <= 2 ) {
+            return ;
+        }
+        GameObject b = Instantiate(gameObject , transform.position , Quaternion.identity );
+        b.GetComponent<SplitForce>().enabled = true ;
+        b.GetComponent<SplitForce>().SplitForce_Method();
+    }
     // Update is called once per frame
     void Update()
     {

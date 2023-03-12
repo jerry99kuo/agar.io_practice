@@ -29,6 +29,10 @@ public class PlayerEatMass : MonoBehaviour
     // Start is called before the first frame update
     public void CheckMass() {
         for (int i = 0 ; i < Mass.Length ; ++ i ) {
+            if (Mass[i]==null){
+                updateMass();
+                return ;
+            }
             Transform m = Mass[i].transform;
             if (Vector2.Distance(transform.position , m.position) <= transform.localScale.x / 2 ) {
                 RemoveMass(m.gameObject) ;

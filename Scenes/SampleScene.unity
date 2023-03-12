@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 26913487}
   - component: {fileID: 26913490}
   - component: {fileID: 26913491}
+  - component: {fileID: 26913492}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -217,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 26913486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.52, y: 0.57, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1944827465}
@@ -252,6 +253,22 @@ MonoBehaviour:
   Mass: {fileID: 5395593538725536742, guid: 2cefbdcc4c36a674db31128c7639cd11, type: 3}
   MassPosition: {fileID: 1944827465}
   percentage: 0.1
+--- !u!114 &26913492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26913486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba32ac276f5ef964882e14f16bbea776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 20
+  LoseSpeed: 30
+  DefaultSpeed: 20
+  ApplySplitForce: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

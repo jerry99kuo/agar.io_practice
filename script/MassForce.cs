@@ -5,7 +5,7 @@ using UnityEngine;
 public class MassForce : MonoBehaviour
 {
     public bool ApplyForce = false ;
-    public float Speed = 10f ;
+    public float Speed = 30f ;
     public float LoseSpeed = 140f ;
     public float Randomrotation = 10f ;
     public float Randomforce = 5f ;

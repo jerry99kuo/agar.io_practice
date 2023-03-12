@@ -18,8 +18,11 @@ public class playermovements : MonoBehaviour
         float speed = Speed / transform.localScale.x ;
         Vector2 Direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = Vector2.MoveTowards(transform.position , Direction , speed *Time.deltaTime);
-        if (Input.GetKey(KeyCode.Space)){
+        if (Input.GetKey(KeyCode.W)){
             actions.TrowMass();
+        }
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            actions.Split() ;
         }
     }
 }
